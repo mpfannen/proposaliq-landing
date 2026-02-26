@@ -1,0 +1,27 @@
+# ProposalIQ
+
+> AI-powered RFP proposal generation for architecture and design firms.
+
+ProposalIQ helps small architecture and design firms generate polished,
+firm-specific proposal drafts from RFP documents using AI — in minutes, not days.
+
+## Product
+- Upload RFP documents (PDF or Word)
+- AI generates tailored proposal drafts based on your firm's knowledge base
+- Built-in refinement, export and print tools
+- Win/loss analytics tracking
+
+## Target Users
+Small architecture and interior design firms (10-50 employees) who respond
+to RFPs and want to reduce proposal writing time.
+
+## Pricing
+- Solo: $99/month
+- Studio: $199/month
+- Firm: $399/month
+- 90-day free beta trial available
+
+## Links
+- Website: https://getproposaliq.com
+- App: https://app.getproposaliq.com
+- Contact: support@getproposaliq.com
