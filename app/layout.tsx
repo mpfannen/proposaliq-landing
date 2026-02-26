@@ -14,7 +14,7 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.getproposaliq.com"),
   title: {
-    default: "ProposalIQ — AI Proposal Software for Architecture & Design Firms",
+    default: "ProposalIQ — Win More RFPs with AI-Powered Proposals",
     template: "%s | ProposalIQ",
   },
   description:
