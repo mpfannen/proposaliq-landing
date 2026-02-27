@@ -24,9 +24,16 @@ export default function ContactForm() {
     e.preventDefault();
     setState("submitting");
 
-    // Simulate async form submission — wire to your API / form backend
-    await new Promise((res) => setTimeout(res, 1000));
-    setState("success");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      setState(res.ok ? "success" : "error");
+    } catch {
+      setState("error");
+    }
   };
 
   if (state === "success") {
