@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, ArrowRight, Minus } from "lucide-react";
+import { trackCtaClick } from "@/lib/analytics";
 
 const PLANS = [
   {
@@ -201,6 +202,7 @@ export default function PricingClient() {
                       ? "bg-brand-blue text-white hover:bg-blue-700"
                       : "border border-brand-border bg-white text-brand-navy hover:border-brand-navy hover:bg-brand-bg"
                   }`}
+                  onClick={() => trackCtaClick(`pricing_${plan.id}_start_free_trial`)}
                 >
                   Start free trial
                   <ArrowRight size={15} />
@@ -284,6 +286,7 @@ export default function PricingClient() {
           <a
             href="https://app.getproposaliq.com/register"
             className="mt-8 inline-flex items-center gap-2 rounded-lg bg-white px-7 py-3.5 text-base font-semibold text-brand-navy transition-all duration-150 hover:bg-blue-50 active:scale-[0.98]"
+            onClick={() => trackCtaClick("pricing_cta_get_started_free")}
           >
             Get started for free
             <ArrowRight size={18} />

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CtaLink from "@/components/CtaLink";
 
 const FOOTER_LINKS = {
   Product: [
@@ -85,12 +86,13 @@ export default function Footer() {
             >
               Sign in
             </a>
-            <a
+            <CtaLink
               href="https://app.getproposaliq.com/register"
+              label="footer_start_free_trial"
               className="text-xs font-semibold text-brand-blue transition-colors hover:text-blue-700"
             >
               Start free trial
-            </a>
+            </CtaLink>
           </div>
         </div>
       </div>

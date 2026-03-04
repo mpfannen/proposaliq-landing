@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
+import { trackCtaClick } from "@/lib/analytics";
 
 const NAV_LINKS = [
   { label: "Features", href: "/#features" },
@@ -69,7 +70,7 @@ export default function Navigation() {
           >
             Sign in
           </a>
-          <a href="https://app.getproposaliq.com/register" className="btn-primary">
+          <a href="https://app.getproposaliq.com/register" className="btn-primary" onClick={() => trackCtaClick("nav_get_started")}>
             Get Started
           </a>
         </div>
@@ -110,6 +111,7 @@ export default function Navigation() {
             <a
               href="https://app.getproposaliq.com/register"
               className="btn-primary w-full"
+              onClick={() => trackCtaClick("nav_mobile_get_started")}
             >
               Get Started
             </a>

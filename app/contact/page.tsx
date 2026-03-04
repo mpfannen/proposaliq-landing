@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Mail, MessageSquare } from "lucide-react";
+import CtaLink from "@/components/CtaLink";
 import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
@@ -104,12 +105,13 @@ export default function ContactPage() {
                   Sign up now and get a full 90-day trial. No credit card
                   required.
                 </p>
-                <a
+                <CtaLink
                   href="https://app.getproposaliq.com/register"
+                  label="contact_start_free_trial"
                   className="mt-3 inline-flex items-center text-sm font-semibold text-brand-blue hover:underline"
                 >
                   Start free trial &rarr;
-                </a>
+                </CtaLink>
               </div>
             </div>
 

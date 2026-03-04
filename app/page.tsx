@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CtaLink from "@/components/CtaLink";
 import {
   ArrowRight,
   BookOpen,
@@ -192,13 +193,14 @@ export default function HomePage() {
             </p>
 
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <a
+              <CtaLink
                 href="https://app.getproposaliq.com/register"
+                label="hero_start_free_trial"
                 className="btn-primary-lg"
               >
                 Start free trial
                 <ArrowRight size={18} />
-              </a>
+              </CtaLink>
               <Link href="/pricing" className="btn-secondary-lg">
                 See pricing
               </Link>
@@ -316,13 +318,14 @@ export default function HomePage() {
               submit better proposals, faster.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-              <a
+              <CtaLink
                 href="https://app.getproposaliq.com/register"
+                label="home_cta_start_free_trial"
                 className="inline-flex items-center justify-center gap-2 rounded-lg bg-white px-7 py-3.5 text-base font-semibold text-brand-navy transition-all duration-150 hover:bg-blue-50 active:scale-[0.98]"
               >
                 Start your free trial
                 <ArrowRight size={18} />
-              </a>
+              </CtaLink>
               <Link
                 href="/pricing"
                 className="inline-flex items-center justify-center gap-2 rounded-lg border border-blue-400 px-7 py-3.5 text-base font-semibold text-white transition-all duration-150 hover:border-white active:scale-[0.98]"
